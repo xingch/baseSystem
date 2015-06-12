@@ -4,7 +4,6 @@ namespace backend\controllers;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
-use common\models\LoginForm;
 use yii\filters\VerbFilter;
 
 /**
@@ -16,7 +15,7 @@ class BackendController extends Controller
     /**
      * @inheritdoc
      */
-    public function behaviors()
+/*     public function behaviors()
     {
         return [
             'access' => [
@@ -40,7 +39,7 @@ class BackendController extends Controller
                 ],
             ],
         ];
-    }
+    } */
 
     /**
      * @inheritdoc
@@ -52,10 +51,5 @@ class BackendController extends Controller
                 'class' => 'yii\web\ErrorAction',
             ],
         ];
-    }
-
-    public function actionIndex()
-    {
-        return $this->render('index');
     }
 }
